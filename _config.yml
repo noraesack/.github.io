@@ -1,27 +1,25 @@
-title: My Website
-description: Portfolio and projects of Your Name
-remote_theme: pages-themes:line
+title:              Clean Blog
+email:              your-email@example.com
+description:        A Blog Theme by Start Bootstrap
+author:             Start Bootstrap
+baseurl:            "/startbootstrap-clean-blog-jekyll"
+url:                "https://startbootstrap.github.io"
 
-# Enable GitHub Pages plugin
+# Social Profiles
+twitter_username:   SBootstrap
+github_username:    StartBootstrap
+facebook_username:  StartBootstrap
+instagram_username:  
+linkedin_username:
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
 plugins:
-  - jekyll-remote-theme
-  
-
-# Set navigation order
-nav_order: 1
-
-# Add your navigation structure (optional override)
-nav:
-  - title: "Home"
-    url: /
-  - title: "About Me"
-    url: /about
-  - title: "Projects"
-    url: /projects
-  - title: "Contact"
-    url: /contact
-
-# Optional extras
-color_scheme: light
-logo: /assets/logo.png
-search_enabled: true
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
